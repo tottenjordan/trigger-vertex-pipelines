@@ -1,6 +1,12 @@
 # trigger-vertex-pipelines
 
-## Train and deploy pipeline
+## Trigger a pipeline run with Cloud Pub/Sub
+
+* complete steps in `00-setup-env.ipynb` to setup cloud resources, grant IAM permissions, and define naming conventions used throughout this tutorial 
+* run `01-pipeline-for-triggering.ipynb` to compile and deploy a model training and deployment pipeline
+* follow steps in `02-create-trigger.ipynb` to deploy a Cloud Function to trigger your pipeline via PuBSub
+
+### Train and deploy pipeline
 
 ![alt text](https://github.com/tottenjordan/trigger-vertex-pipelines/blob/main/imgs/pipeline.png)
 
@@ -14,7 +20,7 @@
 
 > **TODO**
 
-## Cloud Function for triggering pipeline
+### Cloud Function for triggering pipeline
 
 ![alt text](https://github.com/tottenjordan/trigger-vertex-pipelines/blob/main/imgs/cf_trigger_console.png)
 
