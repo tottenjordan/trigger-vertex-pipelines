@@ -1,1 +1,25 @@
 # trigger-vertex-pipelines
+
+## Train and deploy pipeline
+
+![alt text](https://github.com/tottenjordan/trigger-vertex-pipelines/blob/main/imgs/pipeline.png)
+
+* use Vertex AI Pipelines and KFP 2.x version of Google Cloud Pipeline Components to train and deploy an XGBoost model
+* pipeline steps:
+> * Create a BigQuery Dataset resource.
+> * Export the dataset.
+> * Train an XGBoost Model resource.
+> * Create an Endpoint resource.
+> * Deploys the Model resource to the Endpoint resource.
+
+> **TODO**
+
+## Cloud Function for triggering pipeline
+
+![alt text](https://github.com/tottenjordan/trigger-vertex-pipelines/blob/main/imgs/cf_trigger_console.png)
+
+* Create a Cloud Function that triggers a pipeline using an Event-Driven Cloud Function with a Cloud Pub/Sub trigger
+* The Cloud Function will subscribe to a PubSub topic
+* When this function is invoked, it will scan a BigQuery dataset table and kick-off a pipeline if the number of rows has increased above a threshold since last checking 
+
+> **TODO**
